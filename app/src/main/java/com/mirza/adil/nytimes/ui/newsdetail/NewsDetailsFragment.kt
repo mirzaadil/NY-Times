@@ -57,7 +57,7 @@ class NewsDetailsFragment : BaseFragment<NewsDetailsFragmentBinding>() {
             bi.titleDes.text = news.description
             bi.descriptionDes.text = news.title
             bi.createdByTitleDes.text = news.published_date
-
+            bi.imageDetail.setImageURI(news.media?.get(0)?.mediaMetadata?.get(2)?.url)
         }
 
     }
