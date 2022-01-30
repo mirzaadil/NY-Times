@@ -41,14 +41,6 @@ Download the [APK file from here](https://github.com/wajahatkarim3/Imagine/blob/
 - [MockK](https://mockk.io) - For Mocking and Unit Testing
 
 ## 👨 Developed By
-
-<a href="https://twitter.com/WajahatKarim" target="_blank">
-  <img src="https://avatars1.githubusercontent.com/u/8867121?s=460&v=4" width="70" align="left">
-</a>
-
-**Wajahat Karim**
-
-[![Twitter](https://img.shields.io/badge/-twitter-grey?logo=twitter)](https://twitter.com/WajahatKarim)
-[![Web](https://img.shields.io/badge/-web-grey?logo=appveyor)](https://wajahatkarim.com/)
-[![Medium](https://img.shields.io/badge/-medium-grey?logo=medium)](https://medium.com/@wajahatkarim3)
-[![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/wajahatkarim/)
+**Mirza Adil**
+[![Medium](https://img.shields.io/badge/-medium-grey?logo=medium)](https://medium.com/@mirzaadil)
+[![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/mirzaadil/)
