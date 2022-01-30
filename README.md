@@ -2,8 +2,11 @@
 
 
 <div align="center">
-  <img src="https://github.com/wajahatkarim3/Imagine/blob/main/screenshots/day_details.png" width="230px" />  <img src="https://github.com/wajahatkarim3/Imagine/blob/main/screenshots/day_news.png" width="230px" />  <img src="https://github.com/wajahatkarim3/Imagine/blob/main/screenshots/night_detail_news.png" width="230px" /><br>
-  <img src="https://github.com/wajahatkarim3/Imagine/blob/main/screenshots/night_mode_news.png" width="230px" /> 
+  <img src="https://github.com/mirzaadil/NY-Times/blob/main/screenshots/day_details.png" width="230px" />  
+  <img src="https://github.com/mirzaadil/NY-Times/blob/main/screenshots/day_news.png" width="230px" />  
+  <img src="https://github.com/mirzaadil/NY-Times/blob/main/screenshots/night_detail_news.png" width="230px" />
+  <br>
+  <img src="https://github.com/mirzaadil/NY-Times/blob/main/screenshots/night_mode_news.png" width="230px" /> 
 </div>
 
 <br/>
