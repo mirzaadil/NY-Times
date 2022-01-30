@@ -18,6 +18,7 @@ package com.mirza.adil.nytimes.ui.newsdetail
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.mirza.adil.nytimes.base.BaseFragment
 import com.mirza.adil.nytimes.databinding.NewsDetailsFragmentBinding
@@ -30,21 +31,34 @@ class NewsDetailsFragment : BaseFragment<NewsDetailsFragmentBinding>() {
     override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> NewsDetailsFragmentBinding
         get() = NewsDetailsFragmentBinding::inflate
 
+
+    private val viewModel: NewsDetailsViewModel by viewModels()
+
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        getArgsData()
-        setupViews()
-    }
-
-    private fun getArgsData() {
         val news = arguments?.getParcelable<Result>("news")
         if (news == null) {
             findNavController().popBackStack()
             return
         }
+        setupViews()
+        initObservations()
+        viewModel.initNewsModel(news)
+
     }
 
     private fun setupViews() {
     }
 
+
+    fun initObservations() {
+        viewModel.photoModelLiveData.observe(viewLifecycleOwner) { news ->
+
+            bi.titleDes.text = news.description
+            bi.descriptionDes.text = news.title
+            bi.createdByTitleDes.text = news.published_date
+
+        }
+
+    }
 }
