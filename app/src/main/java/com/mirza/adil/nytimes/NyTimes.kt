@@ -22,6 +22,7 @@ package com.mirza.adil.nytimes
 
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.mirza.adil.nytimes.utilies.isNight
 import dagger.hilt.android.HiltAndroidApp
 
@@ -31,6 +32,7 @@ class NyTimes : Application() {
     override fun onCreate() {
         super.onCreate()
 
+        Fresco.initialize(this)
         setupDayNightMode()
     }
 

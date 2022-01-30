@@ -18,12 +18,11 @@ package com.mirza.adil.nytimes.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import coil.load
-import com.mirza.adil.nytimes.R
 import com.mirza.adil.nytimes.databinding.NewsItemLayoutBinding
 import com.mirza.adil.nytimes.model.Result
 
-class NewsAdapter(val onNewsSelected: (news: Result, position: Int) -> Unit) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
+class NewsAdapter(val onNewsSelected: (news: Result, position: Int) -> Unit) :
+    RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
     private val photoItems: ArrayList<Result> = arrayListOf()
 
@@ -37,7 +36,7 @@ class NewsAdapter(val onNewsSelected: (news: Result, position: Int) -> Unit) : R
     }
 
     override fun onBindViewHolder(holder: NewsViewHolder, position: Int) {
-        holder.bind( photoItems[position], position)
+        holder.bind(photoItems[position], position)
     }
 
     override fun getItemCount() = photoItems.size
@@ -47,23 +46,28 @@ class NewsAdapter(val onNewsSelected: (news: Result, position: Int) -> Unit) : R
         photoItems.addAll(news)
     }
 
-    inner class NewsViewHolder(private val itemBinding: NewsItemLayoutBinding) : RecyclerView.ViewHolder(itemBinding.root) {
+    inner class NewsViewHolder(private val itemBinding: NewsItemLayoutBinding) :
+        RecyclerView.ViewHolder(
+            itemBinding.root
+        ) {
 
         fun bind(news: Result, position: Int) {
 
             itemBinding.apply {
                 tvTitle.text = news.title
-//                tvCreatedBy.text= news.byline
+                tvCreatedBy.text = news.byline
+                tvSource.text = news.source
+                tvDate.text = news.published_date
+                image.setImageURI(
+                    news.media?.get(0)?.mediaMetadata?.get(0)?.url
+                )
 
-                imgThumbnail.load(news.media?.get(0)?.mediaMetadata?.get(0)?.url) {
-                    placeholder(R.color.color_box_background)
-                    crossfade(true)
-                }
-//
                 itemBinding.root.setOnClickListener {
                     onNewsSelected(news, position)
                 }
             }
+
+
         }
     }
 }

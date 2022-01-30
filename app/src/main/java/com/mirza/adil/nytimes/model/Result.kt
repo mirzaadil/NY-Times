@@ -23,6 +23,10 @@ data class Result(
     var description: String? = null,
     @SerializedName("byline")
     var byline: String? = null,
+    @SerializedName("source")
+    var source: String? = null,
+    @SerializedName("published_date")
+    var published_date: String? = null,
     @SerializedName("media")
     var media: List<Media>? = null,
     @SerializedName("title")
