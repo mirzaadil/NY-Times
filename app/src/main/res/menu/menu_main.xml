@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search"
+        android:title="Day Night"
+        app:iconTint="@color/color_on_background"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/ic_baseline_more"
+        android:title="Day Night"
+        app:iconTint="@color/color_on_background"
+        app:showAsAction="always" />
     <item
         android:id="@+id/action_day_night_mode"
         android:icon="@drawable/ic_baseline_bedtime_24"
         android:title="Day Night"
         app:iconTint="@color/color_on_background"
         app:showAsAction="always" />
+
 </menu>
