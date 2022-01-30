@@ -1,7 +1,8 @@
-package com.mirza.adil.nytimes
+package com.mirza.adil.nytimes.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.mirza.adil.nytimes.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
