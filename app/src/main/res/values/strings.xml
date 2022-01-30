@@ -2,7 +2,7 @@
     <string name="app_name">NY Times</string>
 
     <!-- Screen Titles -->
-    <string name="screen_home_title_str">Home</string>
+    <string name="screen_home_title_str">NY Times Most Popular</string>
     <string name="screen_photo_details_title_str">News Details</string>
 
     <!-- Text Hints -->
