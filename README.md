@@ -9,20 +9,12 @@
 <br/>
 
 ## Features
-* Popular photos with pagination support
-* Quickly explore top categories like Cars, Mountains, Animals, Interior etc.
-* Search query with pagination support
+* The app fetches NYTimes popular news and displays it in RecyclerView.
+* The app built on a single activity principle, so the news list and detail of news will show on the single screen.
 * Comes in both light and dark mode.
 
 ## Architecture
-* Built with Modern Android Development practices
-* Utilized Usecase, Repository pattern for data
-* Includes unit tests for Use cases, Repository, ViewModels, API Service response.
-
-<img src="https://github.com/wajahatkarim3/Imagine/blob/main/screenshots/Imagine-UnitTests.PNG" width="500px" />
-
-## 📱 Download Demo on Android
-Download the [APK file from here](https://github.com/wajahatkarim3/Imagine/blob/main/Imagine-App.apk?raw=true) on your Android phone and enjoy the Demo App :)
+* Application is built with clean code architecture suggested by the Google Android Developers. This project includes
 
 ## Built With 🛠
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
