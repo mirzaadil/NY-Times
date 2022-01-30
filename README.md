@@ -36,8 +36,5 @@
 
 ## 👨 Developed By
 **Mirza Adil**
-<a href="https://twitter.com/WajahatKarim" target="_blank">
-  <img src="https://github.com/mirzaadil/NY-Times/blob/main/screenshots/day_news.png" width="70" align="left">
-</a>
 [![Medium](https://img.shields.io/badge/-medium-grey?logo=medium)](https://medium.com/@mirzaadil)
 [![Linkedin](https://img.shields.io/badge/-linkedin-grey?logo=linkedin)](https://www.linkedin.com/in/mirzaadil/)
